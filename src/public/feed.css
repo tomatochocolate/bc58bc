@@ -1,0 +1,93 @@
+.hide,
+[hidden] {
+  display: none !important;
+}
+.container .header {
+  line-height: 1.5rem;
+  height: 1.5rem;
+}
+.container .header .back {
+  top: 0.4rem;
+}
+.container .header .btn {
+  top: 0.35rem;
+}
+.container .btn-submit {
+  display: block;
+  margin: 1.2rem auto;
+  width: 3rem;
+  background: #0079ff;
+  line-height: 0.85rem;
+  color: #fff;
+  border-radius: 0.1111rem;
+}
+.container .btn-submit.btn-disabled {
+  opacity: 0.3;
+}
+.container .btn-submit:active {
+  outline: 0;
+}
+.main-form {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-form h2 {
+  margin: 38px;
+  font-size: 24px;
+  color: #222;
+  font-weight: normal;
+}
+.main-form .txt_tel,
+.main-form .txt_desc {
+  border-radius: 2px;
+  margin-right: 40px;
+  border: 1px solid rgba(204, 204, 204, 1);
+  width: 433px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.main-form .txt_tel::-webkit-input-placeholder,
+.main-form .txt_desc::-webkit-input-placeholder {
+  color: #999;
+}
+.main-form .txt_tel {
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+}
+.main-form .txt_desc {
+  height: 130px;
+  padding: 10px;
+  resize: none;
+}
+.main-form table label {
+  color: #666;
+  white-space: nowrap;
+}
+.main-form .btn_submit {
+  width: 96px;
+  height: 32px;
+  background: #4e7aff;
+  border-radius: 2px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+.main-form .btn_submit.btn-disabled {
+  opacity: 0.3;
+}
+.box-fixed,
+.container .div-page {
+  display: block;
+}
+@media screen and (min-width: 751px) {
+  .container .div-toast {
+    font-size: 16px;
+    padding: 16px 30px;
+    height: auto;
+  }
+}

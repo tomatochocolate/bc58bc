@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+/********reset********/
+html,body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, from, input, img, select, button, textarea, iframe, frameset,table, th, tr, td, fieldset{ margin:0; padding:0;}
+
+/********body********/
+*{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+body{font-size:14px; font-family:'微软雅黑'; color:#2b2b2b;}
+div{vertical-align:top;}
+i,em,cite{font-style:normal; color:#2b2b2b}
+h1,h2,h3,h4,h5,h6{ font-weight:normal; }
+a{text-decoration:none; color:#0078FF;}
+a:hover{color:#FF022E;}
+ul,li{list-style:none; display:block;}
+img{border:0 none; max-width:100%}
+img{vertical-align:middle;}
+input{ -webkit-appearance: none; border: 0 }
+input:focus{outline:0}
+.clear{clear: both}
+.btn{display: inline-block;text-align: center;background:#0078FF;color: #fff;}
+.btn:hover{background: #FF022E;color: #fff;}
+
+.safebox{display: block;width: 320px;padding: 32px; margin: 0 auto;background: #fff;margin-top: 100px}
+.safebox.show{display: block;}
+
+.safebox .logo{width: 120px;height: 120px;margin: 0 auto; text-align: center}
+.safebox .title{text-align: center;font-size: 18px;font-weight: bold}
+.safebox .from{width: 256px;margin: 0 auto; }
+.safebox .from li{margin-top: 24px;}
+.safebox .from li .icon{display: inline-block;width: 22px;height: 22px;margin-right: 10px}
+.safebox .from li input{display: inline-block;height: 22px;font-size: 16px; color: #999}
+.safebox .from li .checkcode{width:96px }
+.safebox .from li .checkcodebtn.disable{color: #999;}
+.safebox .from li a{display: inline-block;float: right;}
+.safebox .btn{display:block;width: 256px;margin: 0 auto;margin-top: 24px;border-radius: 20px;font-size: 18px; height: 40px;line-height: 40px;padding: 0 20px;  }
+.safebox .other{margin-top: 24px;}
+.safebox .other li{display: inline-block;width: 49%}
+.safebox .other li:nth-child(2){text-align: right}
+.safebox .info{text-align: center;margin-top: 24px;}
+.safebox .info span{color:#FF022E;}
+
+.product{width: 320px; margin: 0 auto;margin-top: 100px}
+.product ul{width: 92%;margin: 0 auto;padding: 16px 0}
+.product ul li{margin-top: 16px; box-shadow: 0px 1px 2px 0px #999;border-radius: 2px} 
+.product ul li .main{height: 60px;line-height: 60px; background: #fff;padding: 0 12px;}
+.product ul li .main .days{display: inline-block;width: 35%; font-size: 20px;line-height: 32px;}
+.product ul li .main .price{display: inline-block;width: 30%;font-size: 18px;color:#FF022E;line-height: 32px;font-weight: bold;text-align: center;}
+.product ul li .main .buy{display: inline-block;width: 35%;line-height: 32px;text-align: right}
+.product ul li .main .btn{display: inline-block; height: 32px;line-height: 32px;border-radius: 16px;padding: 0 16px;}
+.product ul li.hot .main .btn{background: #FF4201}
+.product ul li.hot .main .btn:hover{background:#FF022E;}
+.product ul li .main .btn i{display: inline-block;height: 20px;width: 20px;margin-right:8px;}
+.product ul li .main .btn span{display: inline-block;color: #fff;font-size: 14px;line-height: 20px}
+.product ul li .info{height: 28px;line-height: 28px;font-size: 12px;padding: 0 12px; color: #999;background: #eee;}
+.product ul li .info .oldprice{}
+.product ul li .info .save{color:#0078FF;}
+.product ul li.hot .info .save{color:#FF4201;}
+.product ul li .info .average{float: right;color:#0078FF;}
+.product ul li.hot .info .average{float: right;color:#FF4201;}
+.buylist{display: none;width: 100%;height: 100%; top: 0; position: absolute;background: rgba(0,0,0,.5)}
+.buylist.show{display: block;}
+.buylist .buybox{width: 300px; margin: 0 auto;margin-top: 100px;background: #fff;padding: 20px;position: relative}
+.buylist .buybox .head{ text-align:center;font-size: 18px; }
+.buylist .buybox .close{ position: absolute;right: 0; top:0; color: #ccc;display: inline-block;padding: 10px}
+.buylist .buybox ul{margin-top: 20px;}
+.buylist .buybox ul li{width: 48%;display: inline-block;}
+.buylist .buybox ul li a{display: block;padding: 6px  12px;border-radius: 6px}
+.buylist .buybox ul li a:hover{background: #ccc;}
+.buylist .buybox ul li a i{width: 36px;height: 36px;display: inline-block;margin-right: 10px;}
+.buylist .buybox ul li a span{color:#2b2b2b}
+
+.order{width: 320px; margin: 0 auto;margin-top: 100px;background: #eee}
+.order ul{width: 92%;margin: 0 auto;padding: 16px 0}
+.order ul li{height: 80px; padding: 12px; margin-top: 16px; box-shadow: 0px 1px 2px 0px #999;background: #fff;border-radius: 2px} 
+.order ul li .info{display: inline-block;width: 70%;float: left;line-height: 28px;}
+.order ul li .info .name{font-size: 16px; color: #2b2b2b;font-weight: bold}
+.order ul li .info .time{font-size: 12px;color: #999}
+.order ul li .price{display: inline-block;width: 30%;float: right;text-align:right;font-size: 24px;line-height: 56px;color: #999}
+
+.help{width: 320px; margin: 0 auto;margin-top: 100px;background: #eee}
+.help ul{width: 92%;margin: 0 auto;padding: 16px 0}
+.help ul li{ padding: 12px; margin-top: 16px; box-shadow: 0px 1px 2px 0px #999;background: #fff;border-radius: 2px} 
+.help ul li .title{height: 20px;line-height: 20px;display: block;}
+.help ul li .title span{color: #2b2b2b}
+.help ul li .title .icon{width: 0;height: 0; border: 6px solid transparent;border-top-color: #0078FF ;float: right;margin-top: 6px;}
+.help ul li.show .title .icon{width: 0;height: 0; border: 6px solid transparent;border-bottom-color: #0078FF ;float: right;margin-top: 0px;}
+.help ul li .info{display: none;font-size: 14px;line-height:24px}
+.help ul li.show .info{display: block;padding: 12px 0}
+
+.home{width: 320px; margin: 0 auto;margin-top: 100px; }
+.home ul{width: 92%;margin: 0 ;padding: 5px 0}
+.home ul li{ padding: 12px; margin-top: 16px;background: #fff;} 
+.home ul li .title{height: 20px;line-height: 20px;display: block;}
+.home ul li .title span{color: #2b2b2b}
+.home ul li .title .icon{width: 0;height: 0; border: 6px solid transparent;border-top-color: #0078FF ;float: right;margin-top: 6px;}
+.home ul li.show .title .icon{width: 0;height: 0; border: 6px solid transparent;border-bottom-color: #0078FF ;float: right;margin-top: 0px;}
+.home ul li .info{display: none;font-size: 14px;line-height:24px}
+.home ul li.show .info{display: block;padding: 12px 0}
+
+
+.feedback{width: 320px; margin: 0 auto;margin-top: 100px;background: #eee}
+.feedback ul{width: 92%;margin: 0 auto;padding: 16px 0}
+.feedback ul li{ padding: 12px; margin-top: 16px; box-shadow: 0px 1px 2px 0px #999;background: #fff;border-radius: 2px} 
+.feedback ul li .title{height: 20px;line-height: 20px;display: block;}
+.feedback ul li .title span{color: #2b2b2b}
+.feedback ul li .title .icon{width: 0;height: 0; border: 6px solid transparent;border-top-color: #0078FF ;float: right;margin-top: 6px;}
+.feedback ul li.show .title .icon{width: 0;height: 0; border: 6px solid transparent;border-bottom-color: #0078FF ;float: right;margin-top: 0px;}
+.feedback ul li .info{display: none;font-size: 14px;line-height:24px}
+.feedback ul li.show .info{display: block;padding: 12px 0}
